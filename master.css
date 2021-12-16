@@ -1,0 +1,64 @@
+.page {
+  position: relative;
+}
+
+#banner {
+  background: black;
+  color: white;
+  padding: 1em 0;
+  position: absolute;
+  top: 0;
+  left: 0;
+  opacity: 0.5;
+}
+
+.vr-box {
+  width: 100vw;
+  height: 100vh;
+}
+
+.vr_thumb, .card {
+  position: relative;
+      /* width: 200px; */
+      opacity: 0.4;
+
+}
+
+.active , .vr_thumb:hover, .card:hover, .vr_thumb a:hover > p {
+  opacity: 1;
+    transition: 0.3s;
+}
+
+.vr_thumb  p {
+  /* position: absolute; */
+  bottom: 0;
+  background-color: rgba(0,0,0,0.7);
+  width: 100%;
+  padding: 0.25em;
+  margin: 0;
+    opacity:0;
+    text-align: center;
+
+}
+
+
+.vr_thumb img {
+  /* position: absolute; */
+  bottom: 0;
+  max-width: 100%;
+}
+
+.vr_thumb a {
+  color: white;
+  font-weight: normal;
+  font-size: 1rem;
+text-decoration: none;
+
+}
+
+.nav_thumbs {
+  margin-bottom: 1em;
+  position: absolute;
+  bottom: 0;
+  padding: 1em 8em 1em 1em;
+}

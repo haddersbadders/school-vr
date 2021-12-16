@@ -1,0 +1,173 @@
+<!DOCTYPE html>
+<html lang="en" dir="ltr">
+  <head>
+    <meta charset="utf-8">
+    <title>Broomhall School Virtual Tour</title>
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@4.5.3/dist/css/bootstrap.min.css" integrity="sha384-TX8t27EcRE3e/ihU7zmQxVncDAy5uIKz4rEkgIXeMed4M0jlfIDPvg6uqKI2xXr2" crossorigin="anonymous">
+    <!-- Add the slick-theme.css if you want default styling -->
+
+<link rel="stylesheet" href="master.css">
+
+<script type="text/javascript">
+// 3 ways to load a document into an iframe using JavaScript
+// from www.dyn-web.com/tutorials/iframes/load/
+function setIframeSrc(id, url) {
+    document.getElementById(id).src = url;
+}
+
+function setIframeLoc(nm, url) {
+    window.frames[nm].location = url;
+}
+
+function replaceIframeURL(nm, url) {
+    window.frames[nm].location.replace(url);
+}
+
+
+</script>
+  </head>
+  <body>
+<div class="page">
+
+<!-- <header id="banner">
+  <div class="container">
+    <h1>VR App v0.1</h1>
+  </div>
+
+</header> -->
+<div class="vr-box">
+  <iframe name="vrbox" id="vrbox" src="welcome.html" width="100%" height="100%"></iframe>
+</div>
+
+<div class="nav_thumbs container-fluid" id="vrnav">
+  <div class="row">
+
+    <div class="col"><div class="vr_thumb active">
+      <a href="1-entrance.html" target="vrbox" onclick="setIframeSrc('vrbox', this.href); return false">
+      <img src="images/thumbs/0-outside-pano.png" alt="Welcome screen">
+      <p>Welcome and Instructions</p>
+      </a>
+    </div>
+  </div>
+      <div class="col"><div class="vr_thumb">
+        <a href="1-entrance.html" target="vrbox" onclick="setIframeSrc('vrbox', this.href); return false">
+        <img src="images/thumbs/1-entrance.jpg" alt="Classroom Entrance">
+        <p>Classroom Entrance</p>
+        </a>
+      </div>
+    </div>
+
+      <div class="col"><div class="vr_thumb">
+        <a href="2-sand-area.html" target="vrbox" onclick="setIframeSrc('vrbox', this.href); return false">
+        <img src="images/thumbs/2-sand-area.jpg" alt="Sand Area">
+        <p>Sand Area</p>
+      </a>
+      </div>
+    </div>
+
+      <div class="col"><div class="vr_thumb">
+        <a href="3-window-display.html" target="vrbox" onclick="setIframeSrc('vrbox', this.href); return false">
+        <img src="images/thumbs/3-window-display.jpg" alt="Window Display">
+        <p>Window Display</p>
+      </a>
+      </div>
+    </div>
+
+      <div class="col"><div class="vr_thumb">
+        <a href="4-art-table.html" target="vrbox" onclick="setIframeSrc('vrbox', this.href); return false">
+        <img src="images/thumbs/4-art-table.jpg" alt="Art Table">
+        <p>Art Tables</p>
+      </a>
+      </div>
+    </div>
+
+      <div class="col"><div class="vr_thumb">
+        <a href="5-baking-playdough.html" target="vrbox" onclick="setIframeSrc('vrbox', this.href); return false">
+        <img src="images/thumbs/5-baking-playdough.jpg" alt="Baking and Playdough">
+        <p>Baking and Playdough</p>
+      </a>
+      </div></div>
+
+      <div class="col"><div class="vr_thumb">
+        <a href="6-kitchen.html" target="vrbox" onclick="setIframeSrc('vrbox', this.href); return false">
+        <img src="images/thumbs/6-kitchen.jpg" alt="Play Kitchen">
+        <p>Play Kitchen</p>
+      </a>
+      </div></div>
+
+      <div class="col"><div class="vr_thumb">
+        <a href="7-construction-play.html" target="vrbox" onclick="setIframeSrc('vrbox', this.href); return false">
+        <img src="images/thumbs/7-construction-play.jpg" alt="Construction Play">
+        <p>Construction Play</p>
+      </a>
+      </div></div>
+
+      <div class="col"><div class="vr_thumb">
+        <a href="8-wood-blocks.html" target="vrbox" onclick="setIframeSrc('vrbox', this.href); return false">
+        <img src="images/thumbs/8-wood-blocks.jpg" alt="Literacy Experiences">
+        <p>Literacy Experiences</p>
+      </a>
+      </div></div>
+
+      <div class="col"><div class="vr_thumb">
+        <a href="9-reading-corner.html" target="vrbox" onclick="setIframeSrc('vrbox', this.href); return false">
+        <img src="images/thumbs/9-reading-corner.jpg" alt="Reading Corner">
+        <p>Reading Corner</p>
+      </a>
+      </div></div>
+
+
+        </div>
+</div>
+
+</div>
+
+
+  </body>
+
+  <script>
+// Add active class to the current button (highlight it)
+var header = document.getElementById("vrnav");
+var btns = header.getElementsByClassName("vr_thumb");
+for (var i = 0; i < btns.length; i++) {
+  btns[i].addEventListener("click", function() {
+  var current = document.getElementsByClassName("active");
+  current[0].className = current[0].className.replace(" active", "");
+  this.className += " active";
+  });
+}
+</script>
+
+
+  <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js" integrity="sha384-DfXdz2htPH0lsSSs5nCTpuj/zy4C+OGpamoFVy38MVBnE+IbbVYUew+OrCXaRkfj" crossorigin="anonymous"></script>
+<script src="https://cdn.jsdelivr.net/npm/bootstrap@4.5.3/dist/js/bootstrap.bundle.min.js" integrity="sha384-ho+j7jyWK8fNQe+A12Hb8AhRq26LrZ/JpcUGGOn+Y7RsweNrtN/tE3MoK7ZeZDyx" crossorigin="anonymous"></script>
+<script type="text/javascript" src="//cdn.jsdelivr.net/npm/slick-carousel@1.8.1/slick/slick.min.js"></script>
+
+<script type="text/javascript">
+
+function preloadImages(array) {
+  if (!preloadImages.list) {
+      preloadImages.list = [];
+  }
+  var list = preloadImages.list;
+  for (var i = 0; i < array.length; i++) {
+      var img = new Image();
+      img.onload = function() {
+          var index = list.indexOf(this);
+          if (index !== -1) {
+              // remove image from the array once it's loaded
+              // for memory consumption reasons
+              list.splice(index, 1);
+          }
+      }
+      list.push(img);
+      img.src = array[i];
+  }
+}
+
+preloadImages(["images/1-pond-ducks.jpg", "images/10-political-graffiti.jpg", "images/2-playground.jpg", "images/3-gates.jpg", "images/4-junior-library.jpg", "images/5-graffiti.jpg", "images/6-lion.jpg", "images/7-secret-garden.jpg", "images/8-boat-den.jpg", "images/9-inside-den.jpg", "images/information-button.png", "images/middlewood-road.png"]);
+
+
+</script>
+
+</html>
